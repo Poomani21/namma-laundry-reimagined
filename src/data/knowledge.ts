@@ -2,7 +2,7 @@ export type Article = {
   slug: string;
   title: string;
   summary: string;
-  topic: "Frequency" | "Home Care" | "Fabric Care" | "Health & Hygiene";
+  topic: "Frequency" | "Home Care" | "Fabric Care" | "Health & Hygiene" | "Seasonal";
   readMinutes: number;
   sections: { heading: string; body: string[]; list?: string[] }[];
   relatedService?: string;
@@ -112,7 +112,7 @@ export const articles: Article[] = [
     slug: "monsoon-fabric-care",
     title: "Monsoon Care: Keeping Clothes Dry-Smelling in Humid Months",
     summary: "Damp smell, mildew spots and slow drying — practical steps for the rainy season.",
-    topic: "Seasonal" as unknown as "Home Care",
+    topic: "Seasonal",
     readMinutes: 3,
     sections: [
       {
